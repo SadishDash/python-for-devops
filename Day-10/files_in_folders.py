@@ -8,6 +8,7 @@ for i in files_list:
         file = os.listdir(i)
     except FileNotFoundError:
         print("Please enter a valid folder name. " + i + " doesnt exist")
+        continue
     except PermissionError:
         print("No Access")
         continue
